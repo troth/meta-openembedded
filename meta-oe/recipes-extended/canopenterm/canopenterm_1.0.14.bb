@@ -11,14 +11,13 @@ HOMEPAGE = "https://canopenterm.de"
 BUGTRACKER = "https://github.com/CANopenTerm/CANopenTerm/issues"
 
 LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://LICENSE.md;md5=5f8a62fabd50ce3f1d7794bc849ae7a5"
+LIC_FILES_CHKSUM = "file://LICENSE.md;md5=bd2edc721b4a0289efe949bdbe7dda79"
 
 DEPENDS = "cjson libinih libsdl3 lua libsocketcan pocketpy"
 
-SRC_URI = "git://github.com/CANopenTerm/CANopenTerm.git;protocol=https;branch=main"
+SRC_URI = "git://github.com/CANopenTerm/CANopenTerm.git;protocol=https;branch=main;tag=v${PV}"
 
-SRCREV  = "b0555360e5e8b444a2a9e14088fd253412184eb8"
-
+SRCREV  = "012e48af26b483ead9df1004cfc92e6908b66b24"
 
 inherit cmake ptest
 
